@@ -1,0 +1,45 @@
+:root {
+  --clr-primary-bright-red: hsl(12, 88%, 59%);
+  --clr-primary-dark-blue: hsl(228, 39%, 23%);
+
+  --clr-neutral-dark-grayish-blue: hsl(227, 12%, 61%);
+  --clr-neutral-dark-blue: hsl(233, 12%, 13%);
+  --clr-pale-red: hsl(13, 100%, 96%);
+  --clr-light-gray: hsl(0, 0%, 98%);
+}
+
+.simplify-section {
+    padding-block: 3rem;
+    padding-inline: 6rem;
+    background: var(--clr-primary-bright-red) url(./images/bg-simplify-section-desktop.svg) no-repeat center;
+    background-size: 120%;
+}
+
+.simplify-heading {
+    font-size: 2rem;
+}
+
+.get-started-white-btn {
+  background-color: var(--clr-light-gray);
+  color: var(--clr-primary-bright-red);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 790px) {
+    .simplify-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        background: var(--clr-primary-bright-red) url(./images/bg-simplify-section-mobile.svg) no-repeat ;
+        padding: 2rem;
+    }
+
+    .simplify-heading {
+        /* font-size: 1.765rem; */
+        text-align: center;
+        width: 100%;
+    }
+}

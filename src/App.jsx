@@ -1,12 +1,15 @@
-import { useState } from 'react'
+import Header from "./components/Header/Header";
+import MainSection from "./components/MainSection/MainSection";
+import Footer from "./components/Footer/Footer";
 
 function App() {
-
   return (
-    <>
-      <h1 className='text-red-500'>Hello World</h1>
-    </>
-  )
+    <div className="main-div  flex flex-col">
+      <Header />
+      <MainSection />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;

@@ -1,7 +1,52 @@
 @import "tailwindcss";
 
-@layer base {
-  @theme {
-    
-  }
+:root {
+  --clr-primary-bright-red: hsl(12, 88%, 59%);
+  --clr-primary-dark-blue: hsl(228, 39%, 23%);
+
+  --clr-neutral-dark-grayish-blue: hsl(227, 12%, 61%);
+  --clr-neutral-dark-blue: hsl(233, 12%, 13%);
+  --clr-pale-red: hsl(13, 100%, 96%);
+  --clr-light-gray: hsl(0, 0%, 98%);
+}
+
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  background-color: white;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--clr-primary-dark-blue);
+}
+
+.get-started-btn {
+  padding: 15px 25px;
+  border-radius: 100vw;
+  cursor: pointer;
+  transition: 300ms linear;
+}
+.get-started-btn:active {
+  scale: 0.9;
+}
+
+.get-started-red-btn {
+  background-color: var(--clr-primary-bright-red);
+  color: var(--clr-light-gray);
+  box-shadow: 0px 0px 20px 0px var(--clr-primary-bright-red);
+}
+
+
+.simplify-section {
+  background-color: var(--clr-primary-bright-red);
+}
+
+footer {
+  background-color: var(--clr-neutral-dark-blue);
 }

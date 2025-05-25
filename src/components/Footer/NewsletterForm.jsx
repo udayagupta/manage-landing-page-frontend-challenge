@@ -19,14 +19,13 @@ const NewsletterForm = () => {
 
   return (
     <form noValidate={true} onSubmit={onSumbit} className="flex gap-3">
-      <label htmlFor="email" className="relative">
+      <label className="relative">
         <input
           value={email}
           type="email"
           className="border"
           placeholder="Updates in your inbox..."
           name="email"
-          id="email"
           onChange={(e) => handleChange(e)}
         />
         {!isEmail && <p className="error">Please insert a valid email!</p>}
